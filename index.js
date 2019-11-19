@@ -16,7 +16,7 @@ for(let i=0;i<boxes.length;i++){
 
 
 function move(obj){
-	obj.style.left=obj.hVel+obj.offsetLeft
-	obj.style.top=obj.vVel+obj.offsetTop
+	obj.style.left=(obj.hVel+obj.offsetLeft)+"px"
+	obj.style.top=(obj.vVel+obj.offsetTop)+"px"
 	console.log('moving!');
 }
