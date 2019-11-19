@@ -2,7 +2,7 @@ var boxes = document.getElementsByClassName('box');
 
 
 for(let i=0;i<boxes.length;i++){
-
+	console.log('found a box!');
 	var s = docuement.createElement('div');
 	s.className="square";
 	s.hVel='1';
@@ -15,7 +15,8 @@ for(let i=0;i<boxes.length;i++){
 
 
 
-function(obj){
+function move(obj){
 	obj.left+=obj.hVel;
 	obj.top+=obj.vVel;
+	console.log('moving!');
 }
