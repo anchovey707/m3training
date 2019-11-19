@@ -3,7 +3,7 @@ var boxes = document.getElementsByClassName('box');
 
 for(let i=0;i<boxes.length;i++){
 	console.log('found a box!');
-	var s = docuement.createElement('div');
+	var s = document.createElement('div');
 	s.className="square";
 	s.hVel='1';
 	s.vVel='1';
