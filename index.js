@@ -18,5 +18,5 @@ for(let i=0;i<boxes.length;i++){
 function move(obj){
 	obj.style.left=(obj.hVel+obj.left)+"px"
 	obj.style.top=(obj.vVel+obj.top)+"px"
-	console.log('moving!');
+	console.log('moving!'+obj.hVel+" "+obj.left);
 }
