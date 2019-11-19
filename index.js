@@ -7,8 +7,8 @@ for(let i=0;i<boxes.length;i++){
 	s.className="square";
 	s.hVel='1';
 	s.vVel='1';
-	s.setInterval(function(){
-		move(this);
+	setInterval(function(){
+		move(s);
 	},500);
 	boxes[i].appendChild(s);
 }
