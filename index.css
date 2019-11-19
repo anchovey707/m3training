@@ -1,9 +1,14 @@
-box{
+#box1{
+	width:200px;
+	height:200px;
+}
+
+.box{
 	position:absolute;
 	border:solid black 2px;
 }
 
-square{
+.square{
 	position:relative;
 	background-color:blue;
 	width:10px;
