@@ -28,7 +28,7 @@ function move(obj){
 		obj.hVel*=-1;
 	if(obj.Top>=(obj.maxTop-obj.scrollHeight)||obj.Top<=0)
 		obj.vVel*=-1;
-
+	
 	obj.Left+=obj.hVel;
 	obj.Top+=obj.vVel;
 	
