@@ -24,11 +24,11 @@ setInterval(function(){
 
 function move(obj){
 	
-	if(obj.Left>=(s.maxLeft-obj.scrollWidth)||obj.Left<=0)
+	if(obj.Left>=(obj.maxLeft-obj.scrollWidth)||obj.Left<=0)
 		obj.hVel*=-1;
-	if(obj.Top>=(s.maxTop-obj.scrollHeight)||obj.Top<=0)
+	if(obj.Top>=(obj.maxTop-obj.scrollHeight)||obj.Top<=0)
 		obj.vVel*=-1;
-	
+
 	obj.Left+=obj.hVel;
 	obj.Top+=obj.vVel;
 	
