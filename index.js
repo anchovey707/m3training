@@ -12,6 +12,7 @@ for(let i=0;i<boxes.length;i++){
 		s.Top=Math.floor(Math.random()*boxes[i].scrollHeight)-20;
 		s.maxLeft=boxes[i].scrollWidth;
 		s.maxTop=boxes[i].scrollHeight;
+		console.log(s.maxLeft+" "+s.maxTop);
 		boxes[i].appendChild(s);
 		squares.push(s);
 	}
@@ -28,16 +29,16 @@ function move(obj){
 		obj.hVel*=-1;
 	if(obj.Top>=(obj.maxTop-obj.scrollHeight)||obj.Top<=0)
 		obj.vVel*=-1;
-	
+
 	obj.Left+=obj.hVel;
 	obj.Top+=obj.vVel;
 	
-	if(obj.Left>obj.maxLeft - obj.scrollWidth){
-		obj.Left=obj.maxLeft - obj.scrollWidth;
+	if(obj.Left>(obj.maxLeft - obj.scrollWidth)){
+		obj.Left=obj.maxLeft - obj.scrollWidth-1;
 		obj.hVel*=-1;
 	}
-	if(obj.Top>obj.maxTop - obj.scrollHeight){
-		obj.Top=obj.maxTop - obj.scrollHeight;
+	if(obj.Top>(obj.maxTop - obj.scrollHeight)){
+		obj.Top=obj.maxTop - obj.scrollHeight-1;
 		obj.vVel*=-1;
 	}
 	
