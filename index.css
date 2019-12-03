@@ -8,7 +8,7 @@ html, body{
 
 .box{
 	position:absolute;
-	border:solid black 2px;
+	border:solid black 1px;
 }
 
 .square{
