@@ -8,8 +8,8 @@ for(let i=0;i<boxes.length;i++){
 		s.className="square";
 		s.hVel=Math.floor(Math.random()*20);
 		s.vVel=Math.floor(Math.random()*20);
-		s.Left=Math.floor(Math.random()*boxes[i].scrollWidth)-20;
-		s.Top=Math.floor(Math.random()*boxes[i].scrollHeight)-20;
+		s.Left=0;
+		s.Top=0;
 		s.maxLeft=boxes[i].scrollWidth;
 		s.maxTop=boxes[i].scrollHeight;
 		console.log(s.maxLeft+" "+s.maxTop);
