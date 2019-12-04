@@ -6,8 +6,8 @@ for(let i=0;i<boxes.length;i++){
 	for(let j=0;j<5;j++){
 		var s = document.createElement('div');
 		s.className="square";
-		s.hVel=Math.floor(Math.random()*20);
-		s.vVel=Math.floor(Math.random()*20);
+		s.hVel=Math.floor(Math.random()*19+1);
+		s.vVel=Math.floor(Math.random()*19+1);
 		s.Left=0;
 		s.Top=0;
 		s.maxLeft=boxes[i].scrollWidth;
@@ -35,11 +35,9 @@ function move(obj){
 	
 	if(obj.Left>(obj.maxLeft - obj.scrollWidth)){
 		obj.Left=obj.maxLeft - obj.scrollWidth-1;
-		obj.hVel*=-1;
 	}
 	if(obj.Top>(obj.maxTop - obj.scrollHeight)){
 		obj.Top=obj.maxTop - obj.scrollHeight-1;
-		obj.vVel*=-1;
 	}
 	
 	if(obj.Left<0)
