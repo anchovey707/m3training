@@ -21,7 +21,7 @@ console.log(squares);
 setInterval(function(){
 	for(let i=0;i<squares.length;i++)
 		move(squares[i]);
-},50);
+},500);
 
 function move(obj){
 	
